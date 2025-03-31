@@ -16,5 +16,19 @@ class Barrack extends Model
         'location'
     ];
 
-    
+
+    public function soldiers()
+    {
+        return $this->hasMany('App\Models\Soldier');
+    }
+
+    public function armycorps()
+    {
+        return $this->belongsToMany('App\Models\Armycorp');
+    }
+
+    public function company_headquarters()
+    {
+        return $this->hasOne('App\Models\company_barrack');
+    }
 }

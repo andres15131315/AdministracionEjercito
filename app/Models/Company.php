@@ -13,5 +13,12 @@ class Company extends Model
 
     protected $fillable = [
         'primary_activity_company' 
+        
     ];
+   
+public function company_barrack()
+{
+    return $this->hasOne('App\Models\company_barrack');
+}
+
 }
