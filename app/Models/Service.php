@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Service extends Model
 {
 
-public function soldiers()
+public function soldier()
 {
     return $this->hasMany('App\Models\Soldier');
 }

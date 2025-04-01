@@ -15,7 +15,7 @@ class ArmyCorps extends Model
         'denomination_ac' 
     ];
 
-public function soldiers()
+public function soldier()
 {
     return $this->hasMany('App\Models\Soldier');
 }

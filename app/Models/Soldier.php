@@ -12,7 +12,7 @@ class Soldier extends Model
         return $this->belongsTo('App\Models\Armycorp');
     }
 
-    public function barracks()
+    public function barrack()
     {
         return $this->belongsTo('App\Models\Barrack');
     }
