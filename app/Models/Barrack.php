@@ -17,14 +17,14 @@ class Barrack extends Model
     ];
 
 
-    public function soldier()
+    public function Soldier()
     {
         return $this->hasMany('App\Models\Soldier');
     }
 
-    public function armycorp()
+    public function ArmyCorp()
     {
-        return $this->belongsToMany('App\Models\Armycorp');
+        return $this->belongsToMany('App\Models\ArmyCorp');
     }
 
     public function company_barrack()

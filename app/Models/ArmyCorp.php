@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class ArmyCorps extends Model
+class ArmyCorp extends Model
 {
     use HasFactory;
 
@@ -15,7 +15,7 @@ class ArmyCorps extends Model
         'denomination_ac' 
     ];
 
-public function soldier()
+public function Soldier()
 {
     return $this->hasMany('App\Models\Soldier');
 }
